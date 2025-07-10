@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>8-bit game</title>
+	<meta charset="utf-8">
+
+	<link type="image/x-icon" rel="shortcut icon" href="./gif/run-rigth.gif">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<h1 class="header-text">My First Game</h1>
+		<div class="scope">
+			<ul class="list-items">
+				<li class="item">
+					<p>SCOPE</p>
+					<p id="scopeNum"></p>
+				</li>
+				<li class="item">
+					<p>COINS</p>
+					<p id="coinsNum"></p>
+				</li>
+				<li class="item">
+					<p>LIVES</p>
+					<p id="liveNum"></p>
+				</li>
+				<li class="item">
+					<p>TIME</p>
+					<p id="timeNum"></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<main class="main">
+		<div class="container-top">
+			<img class="cloud-right cloud-right-1" src="./img/cloudBigRight.png">
+			<img class="cloud-left cloud-left-1" src="./img/cloudBigLeft.png">
+			<img class="cloud-right cloud-right-2" src="./img/cloudSmallRight.png">
+			<img class="cloud-left cloud-left-2" src="./img/cloudSmallLeft.png">
+		</div>
+
+		<div class="container-bottom">
+			<img class="gif" src="./gif/run-rigth.gif">
+			<div class="block-coins">
+				<img class="img-coins" src="./img/coins.png">
+			</div>
+			<div class="block-ground">
+				<img class="ground" src="./img/ground.png">
+			</div>
+		</div>
+	</main>
+
+	<div class="modal modal-start">
+		<div class="modal-content">
+			<h1 class="modal-text-start">Start game!</h1>
+			<button class="modal-start-btn">Go!</button>
+		</div>
+	</div>
+	<div class="modal modal-end">
+		<div class="modal-content">
+			<h1 class="modal-text-end"></h1>
+			<button class="modal-btn-end">Restart lvl</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

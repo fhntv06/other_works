@@ -1,0 +1,203 @@
+*{
+	padding: 0;
+	margin:0;	 
+}
+
+body{
+	background-color: deepskyblue;
+	overflow: hidden
+}
+
+ul{
+	list-style-type: none;
+}
+
+.header{
+    margin-top: 2vh;
+}
+
+.header-text{
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2em;
+}
+
+.scope{
+	display: none;
+}
+
+.list-items{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+    margin-top: 3vh;
+	width: 100%;
+	height: 5%; 
+}
+
+.item p{
+    margin: 10px 0 10px 0;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1em;
+}
+
+.main{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 80%;
+	width: 100%;
+}
+
+.container-top{
+	position: absolute;
+	top:0;
+	left: 0;
+    height: 25vh;
+    width: 100%;
+}
+
+.cloud-right{
+	z-index: 5;
+	position: absolute;
+	height: 10vh;	
+}
+.cloud-right-transform{
+	transform: translate(1440px);
+}
+.cloud-right-1{
+	top: 1vh;
+	right: 0; 
+	transition: 75s;
+}
+.cloud-right-2{
+    top: 10vh;
+    right: 160px;
+    transition: 65s;
+}
+
+.cloud-left{
+	z-index: 2;
+	position: absolute;
+	height: 10vh;
+}
+
+.cloud-left-1{
+	top:1vh;
+	left:0;
+	transition: 120s;
+}
+.cloud-left-2{
+	top: 13vh;
+    left: 190px;
+    transition: 75s;
+}
+
+.container-bottom{
+	display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40vh;
+    width: 100%;
+    opacity:0;
+}
+
+.gif{
+	display: none;
+    z-index: 5;
+    position: relative;
+    bottom: -1vh;
+    height: 20vh;
+    transition: .15s;
+}
+
+.gif-jump{
+	bottom: 20vh;
+	transition: .3s;
+}
+
+.block-coins {
+    position: relative;
+    left: 150px;
+    height: 20vh;
+    width: 5vw;
+    margin-top: 25px;
+}
+
+.img-coins{
+	height: 10vh;
+}
+
+.block-ground{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+}
+
+.ground {
+    height: 100%;
+}
+
+.block-fire{
+    position: absolute;
+    bottom: -15vh;
+    width: 30vw;
+    right: 13vw;
+    height: 30vw;
+}
+
+.modal{
+	z-index: 25;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	transition: .7s;
+	background-color: #0000004d;
+}
+.modal-start{
+	display: block;
+}
+.modal-end{
+	display: none;
+}
+
+.modal-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top:45vh;
+	left: 43vw;
+}
+
+.modal-text-end, .modal-text-start{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1rem; 
+	text-align: center;
+}
+
+.modal-btn-end, .modal-start-btn{
+	cursor: pointer;
+	height: 6vh;
+	width: 80%;
+	margin-top: 5%;
+	background-color: white;
+	border:none;
+	border-radius: 5px;
+	transition: .3s;
+	font-family: 'Press Start 2P', cursive;
+	font-size: .5rem;
+}
+
+.modal-btn-end:hover, .modal-start-btn:hover{
+	color: white;
+	background-color: black;
+	transition: .3s;
+}

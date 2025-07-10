@@ -1,0 +1,14 @@
+1)
+сделать вместо просто фона в header, что то наподобие https://codepen.io/juliamlim/pen/zrYyVy
+
+типо окно приветсвия сбербанка
+
+2) посмотреть ссылки в закрепе или:
+	1) https://codepen.io/terf/pen/vgurb
+	2) https://codepen.io/juliamlim/pen/zrYyVy
+	3) https://codepen.io/aaroniker/pen/mdyYBPP
+	4) https://codepen.io/Gthibaud/pen/MJqgzv
+	5) 
+
+3) сделать модальное окно для кнопки "Написать мне"
+4) добавить параллакс к directions

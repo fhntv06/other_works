@@ -1,0 +1,280 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #3F51B5;
+}
+
+.container{
+    height: max-content;
+    width: max-content;
+    margin: 10px auto;
+    padding: 15px 0;
+    background-color: #00b0ff;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.clock{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 900px;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border:5px solid black;
+  background-image: url(https://static-eu.insales.ru/files/1/7042/6060930/original/dostavka.png);
+    background-size: cover; 
+}
+
+.into-circle{
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: white;
+	height: 850px;
+	width:850px;
+	border:5px solid black;
+	border-radius: 50%;
+}
+
+.time{
+    height: inherit;
+    width: inherit;
+    font-size: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.time1{
+    position: absolute;
+    top: 32px;
+    right: 220px;
+}
+.time2{
+	position: absolute;
+    top: 148px;
+    right: 90px;
+}
+.time3{
+    position: absolute;
+    right: 0;
+}
+.time4{
+	position: absolute;
+    top: 510px;
+    right: 75px;
+}
+.time5{    
+    position: absolute;
+    top: 620px;
+    right: 226px;
+
+}
+.time6{
+	position: absolute;
+    bottom: -30px;
+
+}
+.time7{
+	position: absolute;
+    top: 620px;
+    left: 226px;
+
+}
+.time8{
+	position: absolute;
+    top: 510px;
+    left: 75px;
+
+}
+.time9{
+    position: absolute;
+    left: 0;
+
+}
+.time10{
+	position: absolute;
+    top: 158px;
+    left: 55px;
+
+}
+.time11{
+    position: absolute;
+    top: 32px;
+    left: 190px;
+}
+.time12{
+	position: absolute;
+    top: -30px;
+}
+
+.cube{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: #4DD0E1;
+    transform: rotate(45deg);
+    border-radius: 120px;
+}
+
+.center-circle-down{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #616161;
+    box-shadow: 0 0 15px 2px black;
+}
+
+.arrow-m{
+	position: relative;
+    top: -320px;
+    left: 0px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.arrow-m-img{
+    height: 700px;
+    width: 62px;
+    transition: .95s;
+    transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.arrow-h{
+    position: relative;
+    top: -995px;
+    left: 0px;
+    border-radius: 10px;
+    transition: 0.95s;
+}
+
+.arrow-h-img{
+    height: 580px;
+    width: 52px;
+    transition: 1s;
+    transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.arrow-s{
+    position: relative;
+    top: -1711px;
+    left: 12px;
+    border-radius: 10px;
+    transition: 0.95s;
+}
+
+.arrow-s-img{
+    height: 800px;
+    width: 38px;
+    transition: 1s;
+    transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.center-circle-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: inset 0 0 5px black;
+}
+
+.your-time{
+    display: none;
+    width: max-content;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: Roboto, sans-sarif;
+    font-weight: normal;
+    background-color: #FF8700;
+    color: white;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.btn{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: 2px solid;
+    transform: rotate(-45deg);
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0 0 5px 2px black;
+    background-color: blue;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: red;
+    box-shadow: inset 0 0 5px 2px black;
+    transition: .5s;
+}
+
+.btn-active{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: 2px solid;
+    transform: rotate(-45deg);
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background-color: red;
+    box-shadow: inset 0 0 5px 2px black;
+    transition: .5s;
+}
+
+.other{
+    display: none;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-town{
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 45vh;
+    width: 75vw;
+    margin:10px 15px;
+    border-radius: 10px;
+}
+
+.clock-Msk{
+    background-image: url(https://kudago.com/media/thumbs/xl/images/list/f3/51/f3511ffcda2c553f647737eef25d0078.jpg);
+}
+
+.clock-NY{
+    background-image: url(https://cdn.travelpulse.com/images/99999999-9999-9999-9999-999999999999/b0ba9865-07ca-6d36-c63e-65884975ecec/630x355.jpg);
+}
+
+.clock-Ln{
+    background-color: red;
+}
+
+.clock-town-content{
+    background-color: gray;
+}

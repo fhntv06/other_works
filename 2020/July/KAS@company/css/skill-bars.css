@@ -1,0 +1,56 @@
+.Bar{
+    width: 1%;
+    height: 30px;
+    text-align: right;
+    padding: 7px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.progressBar {
+    width: 100%;
+    background-color: #e2e2e2;
+}
+/* HTML */
+.html {
+    color: #e34f26;
+}
+.html i {
+    font-size: 25px;
+}
+#htmlBar{
+    background-color: #e34f26;
+}
+/* CSS */
+.css {
+    color: #3498db;
+}
+.css i {
+    font-size: 25px;
+}
+#cssBar {
+    background-color: #3498db;
+}
+/* JS */
+.js {
+    color: #f7df1e;
+}
+.js i {
+    font-size: 25px;
+}
+#jsBar {
+    background-color: #f7df1e;
+}
+/* JQ */
+.jq {
+    color: #2980b9;
+}
+.jq img {
+    width: 100px;
+}
+#jqBar{
+    background-color: #2980b9;
+}
+#bootBar{
+    background-color: #673ab6;
+}
+

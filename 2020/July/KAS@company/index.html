@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>KAS@company</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<header class="header">
+		
+		<nav class="navigation navigation-1">
+			<div class="navigation-left">
+				<p class="navigation-text about-scroll">
+					<a href="#about">About me</a>
+				</p>
+				<p class="navigation-text about-scroll">
+					<a href="#project">Projects</a>
+				</p>
+				<p class="navigation-text contact-scroll">
+					<a href="#contact">My contact</a>
+				</p>
+			</div>
+			<div class="navigation-right">
+				<button class="btn">Написать мне</button>
+				<span class="navigation-text">+7-908-946-1483</span>
+			</div>
+		</nav>
+
+		<ul class="content-directions content-directions-parallax">
+			<li class="content-directions-item content-directions-position-left">
+				<h3 class="direction-HTML">HTML</h3>
+				<div class="content-direction content-direction-HTML">
+					<div class='console-container'>
+						<span class="direction-code" id='text-html'>Wait...</span>
+					</div>
+				</div>
+			</li>
+			<li class="content-directions-item content-directions-position-right">
+				<h3 class="direction-CSS">CSS</h3>
+				<div class="content-direction content-direction-CSS">
+					<div class='console-container'>
+						<span class="direction-code" id='text-css'>Wait...</span>
+					</div>
+				</div>
+			</li>
+			<li class="content-directions-item content-directions-position-left content-directions-position-correct">
+				<h3 class="direction-JS">JavaScript</h3>
+				<div class="content-direction content-direction-JS">
+					<div class='console-container'>
+						<span  class="direction-code" id='text-js'>Wait...</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="container-nickname">
+			<ul class="container-text">
+				<li ><p class="container-text-1">KAS@
+						<span class="container-text-2">company</span>
+					</p>
+				</li>
+				<li ><p class="container-text-2">DESIGNER and DEVELOPMENT</p></li>
+			</ul>
+
+		</div>	
+
+		<nav class="navigation navigation-2">
+			<div class="navigation-left">
+				<span class="navigation-text">
+					<a href="#about">About me</a>
+				</span>
+				<span class="navigation-text about-scroll">
+					<a href="#project">Projects</a>
+				</span>
+				<span class="navigation-text">
+					<a href="#contact">My contact</a>
+				</span>
+			</div>
+			<div class="navigation-right">
+				<button class="btn">Написать мне</button>
+				<span class="navigation-text">+7-908-946-1483</span>
+			</div>
+		</nav>
+	</header>
+
+	<div class="main">
+		<!-- Начало: Блок about -->
+		<div class="container-content">
+
+
+			<div class="container-text" id="about">
+				<h1 class="content-text-1">About me</h1>
+				<h3>Skills</h3>	
+			</div>
+			
+			<div class="container">
+				<ul class="container-items">
+					<li class="container-item item1">
+						<hr>
+						<div class="container-item-left">
+							<div class="container-item-text">
+								<h1>HTML</h1>
+								<p class="item1-about container-item-text-about">Стандартизированный язык разметки документов во Всемирной паутине.</p>
+							</div>
+							<img src="./img/skills/html.webp" alt="HTML picture">
+						</div>
+						<div class="value-skill">
+							<div class="progressBar">
+								<div id="htmlBar" class="Bar">75%</div>
+							</div>
+						</div>
+					</li>
+					<li class="container-item item2">
+						<hr>
+						<div class="container-item-left">
+							<div class="container-item-text">
+								<h1>CSS</h1>
+								<p class="item2-about container-item-text-about">Формальный язык описания внешнего вида документа, написанного с использованием языка разметки.</p>
+							</div>
+							<img src="./img/skills/css.webp" alt="CSS picture">
+						</div>
+						<div class="value-skill">
+							<div class="progressBar">
+								<div id="cssBar"  class="Bar">65%</div>
+							</div>
+						</div>
+					</li>
+					<li class="container-item item3">
+						<hr>
+						<div class="container-item-left">
+							<div class="container-item-text">
+								<h1>JavaScript</h1>
+								<p class="item3-about container-item-text-about">Мультипарадигменный язык программирования.</p>
+							</div>
+							<img src="./img/skills/javascript.webp" alt="JavaScript picture">
+						</div>
+						<div class="value-skill">
+							<div class="progressBar">
+								<div id="jsBar"  class="Bar">50%</div>
+							</div>
+						</div>
+					</li>
+					<li class="container-item item4">
+						<hr>
+						<div class="container-item-left">
+							<div class="container-item-text">
+								<h1>Jquery</h1>
+								<p class="item4-about container-item-text-about">Набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и HTML.</p>
+							</div>
+							<img src="./img/skills/jquery.webp" alt="Jquery picture">
+						</div>
+						<div class="value-skill">
+							<div class="progressBar">
+								<div id="jqBar"  class="Bar">45%</div>
+							</div>
+						</div>
+					</li>
+					<li class="container-item item5">
+						<hr>
+						<div class="container-item-left">
+							<div class="container-item-text">
+								<h1>Bootstrap</h1>
+								<p class="item5-about container-item-text-about">Свободный набор инструментов для создания сайтов и веб-приложений. </p>
+							</div>
+							<img src="./img/skills/bootstrap.webp" alt="Bootstrap picture">
+						</div>
+						<div class="value-skill">
+							<div class="progressBar">
+								<div id="bootBar" class="Bar">30%</div>
+							</div>
+						</div>
+					</li>		
+				</ul>
+				<div class="container-item item6">
+						<div class="container-item-left">
+							<div class="container-item-text">
+								<h1>Адаптивная верска</h1>
+								<p class="item6-about container-item-text-about">Адаптивная верстка меняет дизайн страницы в зависимости от поведения пользователя, платформы, размера экрана и ориентации девайса и является неотъемлемой частью современной веб-разработки.</p>
+							</div>
+							<!-- слайдер в с прокруткой основных видов техники и чтобы там было написано их разрешение
+							Подумать над тем, чтобы этот сайт сделать на фото разных разрешений  -->
+							<div class="container-body">
+								<div class="container-slider">
+							  		<div class="device iphone"></div>
+							  		<div class="buttons">
+							  		  <span class="button-left"></span>
+							  	 	 <span class="button-right"></span>
+							  		</div>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-item item7">
+						<div class="container-item-text">
+							<h1>Кроссбраузерная верстка</h1>
+							<p class="item7-about container-item-text-about">Подход к разработке html-кода, который обеспечивает корректное отображается во всех существующих браузерах.</p>
+						</div>
+						<div class="container-item-galaxy">
+							<img class="earth" src="./img/skills/cross-browser/earth.webp" alt="Earth picture">
+							
+						</div>
+					</div>
+						
+						<!-- может сделать как на фото? пусть сателиты вращаются вокруг земли или по скролу-->	
+			</div>
+
+			<blockquote class="blockquote-content">
+				<p>&laquo;Ability is of little value without possibility&raquo;</p>
+				<footer>— <cite>Napoleon Bonaparte</cite></footer>
+			</blockquote>
+
+		</div>
+	
+		<!-- Конец: Блок about -->
+		<!-- Начало: Блок works -->
+		<div class="container-works">
+			<h1 id="project" class="content-text-1">Portfolio:</h1>
+			<div class="slider__warpper">
+			  <div class="flex__container flex--pikachu flex--active" data-slide="1">
+			    <div class="flex__item flex__item--left">
+			      <div class="flex__content">
+			        <a href="http://volonters-kuzstu.kl.com.ua"><p class="text--sub">http://volonters-kuzstu.kl.com.ua</p></a>
+			        <h1 class="text--big">Волонтерский центр "Пламя"
+			        </h1>
+			        <p class="text--normal">Организация волонтеров КузГТУ, тех, кто бескорыстно и добровольно помогает людям.</p>
+			      </div>
+			      <p class="text__background">Пламя</p>
+			    </div>
+			    <div class="flex__item flex__item--right"></div>
+			    <img class="pokemon__img" src="./img/slider/imgVol.webp" alt="Пламя"/>
+			  </div>
+
+			  <div class="flex__container flex--piplup animate--start" data-slide="2">
+			    <div class="flex__item flex__item--left">
+			      <div class="flex__content">
+			        <a href="http://культпатруль.kl.com.ua/"><p class="text--sub">http://культпатруль.kl.com.ua/</p></a>
+			        <h1 class="text--big">Культурный Патруль Кемерово</h1>
+			        <p class="text--normal">Контролируем состояние объектов культурного наследия, которые нам дороги, и работаем с органами власти для реализации совместных инициатив.</p>
+			      </div>
+			      <p class="text__background">КультПатруль</p>
+			    </div>
+			    <div class="flex__item flex__item--right"></div>
+			    <img class="pokemon__img" src="./img/slider/kultPatr.webp" alt="КультПатруль"/>
+			  </div>
+
+			  <div class="flex__container flex--blaziken animate--start" data-slide="3">
+			    <div class="flex__item flex__item--left">
+			      <div class="flex__content">
+			        <p class="text--sub">Pokemon Gen III</p>
+			        <h1 class="text--big">Blaziken</h1>
+			        <p class="text--normal">Blaziken is the Fire/Fighting-type Starter Pokémon of the Hoenn region, introduced in Generation III. Blaziken is a large, bipedal, humanoid bird-like Pokémon that resembles a rooster.</p>
+			      </div>
+			      <p class="text__background">Blaziken</p>
+			    </div>
+			    <div class="flex__item flex__item--right"></div>
+			    <img class="pokemon__img" src="" alt="Blaziken"/>
+			  </div>
+
+			  <div class="flex__container flex--dialga animate--start" data-slide="4">
+			    <div class="flex__item flex__item--left">
+			      <div class="flex__content">
+			        <p class="text--sub">Pokemon Gen IV</p>
+			        <h1 class="text--big">Dialga</h1>
+			        <p class="text--normal">Dialga is a Steel/Dragon-type Legendary Pokémon. Dialga is a sauropod-like Pokémon. It is mainly blue with some gray, metallic portions, such as its chest plate, which has a diamond in the center. It also has various, light blue lines all over
+			          its body.</p>
+			      </div>
+			      <p class="text__background">Dialga</p>
+			    </div>
+			    <div class="flex__item flex__item--right"></div>
+			    <img class="pokemon__img" src="" alt="Dialga"/>
+			  </div>
+			  
+				<div class="flex__container flex--zekrom animate--start" data-slide="5">
+					<div class="flex__item flex__item--left">
+					  <div class="flex__content">
+					    <p class="text--sub">Pokemon Gen V</p>
+					    <h1 class="text--big">Zekrom</h1>
+					    <p class="text--normal">Zekrom is a Dragon/Electric-type Legendary Pokémon. It is part of the Tao Trio, along with Reshiram and Kyurem. Zekrom is a large, black draconian Pokémon that seems to share its theme with its counterpart, Reshiram. It has piercing red eyes and
+					      dark gray to black skin that seems to be armor-like.</p>
+					  </div>
+					  <p class="text__background">Zekrom</p>
+					</div>
+					<div class="flex__item flex__item--right"></div>
+					<img class="pokemon__img" src="" alt="Zekrom"/>
+				</div>
+
+				<div class="slider__navi">
+					<a href="#" class="slide-nav active" data-slide="1">pikachu</a>
+					<a href="#" class="slide-nav" data-slide="2">piplup</a>
+					<a href="#" class="slide-nav" data-slide="3">blaziken</a>
+					<a href="#" class="slide-nav" data-slide="4">dialga</a>
+					<a href="#" class="slide-nav" data-slide="5">zekrom</a>
+				</div>
+			</div>
+		</div>
+		<!-- Конец: Блок works -->
+
+		<!-- Начало: Блок contact -->
+		<div class="container-contact">
+			<div class="container-contact-content">
+				<h1 id="contact" class="content-text-1">Contact</h1>
+				<ul class="contact-directions">
+					<li class="contact-direction contact-direction-left">
+						<div class="direction">
+							<img src="img/icon/phone.svg" class="icon icon-phone" alt="Phone picture">
+							<p class="direction-text direction-text-phone">+7-908-946-1483</p> 
+						</div>
+
+						<div class="direction">
+							<img src="img/icon/email.svg" class="icon icon-email" alt="Email picture">
+							<span class="direction-text">fhntv1357246@mail.ru</span>
+						</div>
+					</li>
+					<li class="contact-direction contact-direction-right">
+						<a href="https://vk.com/k.artem76" class="direction">
+							<img src="img/icon/vk.svg" class="icon icon-socialVk" alt="VK picture">
+						</a>
+
+						<a href="https://github.com/fhntv06" class="direction">
+							<img src="img/icon/github.svg" class="icon icon-socialGit" alt="GitHub picture">
+						</a>
+					</li>
+				</ul>
+
+				<form id="form-bottom-feedback" class="form">
+					<div>
+						<p class="content-text-1">What do you think about my site?</p>
+						<p class="content-text-2">Pls, write in the feedback form.</p>
+					</div>
+					<br>
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="KAS@company">
+					<input type="hidden" name="admin_email" value="admin@verstka.kl.com.ua">
+					<input type="hidden" name="form_subject" value="Form bottom">
+					<!-- END Hidden Required Fields -->
+
+					<div class="container-contacts-panel">
+						<div class="panel-contant-footer">
+							<div class="panel-inputs panel-inputs-contacts">
+								<div class="panel-input-left">
+									<div class="panel-content">
+										<p>Name:</p>
+										<input class="input" type="text" name="Имя" placeholder="Name" required>
+									</div>
+									<div class="panel-content">
+										<p>Email:</p>
+										<input class="input" type="text" name="Email" placeholder="E-mail" required>
+									</div>
+								</div>
+								<div class="panel-input-right">
+									<div class="panel-content">
+										<p>Message:</p>
+										<textarea class="input" name="Сообщение" cols="30" rows="10" placeholder="Message"></textarea>
+									</div>
+								</div>
+							</div>
+							<button class="panel-button">Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Конец: Блок contact -->
+		
+	</div>
+
+  	<div class="container-modal">
+	  	<div class="modal-dialog">
+		  	<form id="form-modal-feedback" class="form">
+					<div>
+						<p class="content-text-1">Contact us today, and get a reply within 24 hours!</p>
+						<p class="content-text-2">Pls, write in the feedback form.</p>
+					</div>
+					<br>
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="KAS@company">
+					<input type="hidden" name="admin_email" value="admin@verstka.kl.com.ua">
+					<input type="hidden" name="form_subject" value="Form modal">
+					<!-- END Hidden Required Fields -->
+
+					<div class="container-contacts-panel">
+						<div class="panel-contant-footer">
+							<div class="panel-inputs panel-inputs-contacts">
+								<div class="panel-input-left">
+									<div class="panel-content">
+										<p>Name:</p>
+										<input class="input" type="text" name="Имя" placeholder="Name" required>
+									</div>
+									<div class="panel-content">
+										<p>Email:</p>
+										<input class="input" type="text" name="Email" placeholder="E-mail" required>
+									</div>
+								</div>
+								<div class="panel-input-right">
+									<div class="panel-content">
+										<p>Message:</p>
+										<textarea id="textarea" class="input" name="Сообщение" cols="30" rows="10" placeholder="Message"></textarea>
+									</div>
+								</div>
+							</div>
+							<button id="btnModal" class="panel-button">Send</button>
+						</div>
+					</div>
+					
+				
+			<h1 class="modal-dialog-bottom-text content-text-1">Are you happy that you came?</h1>
+	        <ul class="feedback">
+	            <li class="angry">
+	                <div id="angry">
+	                    <svg class="eye left">
+	                        <use xlink:href="#eye">
+	                    </svg>
+	                    <svg class="eye right">
+	                        <use xlink:href="#eye">
+	                    </svg>
+	                    <svg class="mouth">
+	                        <use xlink:href="#mouth">
+	                    </svg>
+	                </div>
+	            </li>
+	            <li class="sad">
+	                <div id="sad">
+	                    <svg class="eye left">
+	                        <use xlink:href="#eye">
+	                    </svg>
+	                    <svg class="eye right">
+	                        <use xlink:href="#eye">
+	                    </svg>
+	                    <svg class="mouth">
+	                        <use xlink:href="#mouth">
+	                    </svg>
+	                </div>
+	            </li>
+	            <li class="ok">
+	                <div id="ok"></div>
+	            </li>
+	            <li class="good">
+	                <div id="good">
+	                    <svg class="eye left">
+	                        <use xlink:href="#eye">
+	                    </svg>
+	                    <svg class="eye right">
+	                        <use xlink:href="#eye">
+	                    </svg>
+	                    <svg class="mouth">
+	                        <use xlink:href="#mouth">
+	                    </svg>
+	                </div>
+	            </li>
+	            <li class="happy active">
+	                <div id="happy">
+	                    <svg class="eye left">
+	                        <use xlink:href="#eye">
+	                    </svg>
+	                    <svg class="eye right">
+	                        <use xlink:href="#eye">
+	                    </svg>
+	                </div>
+	            </li>
+	        </ul>
+	        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye">
+		            <path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path>
+		        </symbol>
+		        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth">
+		            <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+		        </symbol>
+	   		 </svg>
+	   		 <input class="modal-dialog-bottom-text-innerHTML modal-dialog-bottom-text" name="Настроение" readonly required>
+   		 	<button  class="form-button panel-button ">Come back!
+				<img class="form-img-arrow" src="./img/arrow_white.webp" alt="Arrow picture">
+			</button>	
+			</form>
+	    </div>
+    </div>   
+
+    <div id="back-top">
+		<a href="#" onclick="return up()">ВВЕРХ</a>  
+	</div>            
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+	
+	<script  src="./js/modal-script.js"></script>
+	
+	<script type="text/javascript" src="./js/javascript.js"></script>
+	<script type="text/javascript" src="./js/slider.js"></script>
+	<script type="text/javascript" src="./js/formFeedBack-script.js"></script>
+
+	<script type="text/javascript" src="./js/css_St.js"></script>
+	<script type="text/javascript" src="./js/html_St.js"></script>
+	<script type="text/javascript" src="./js/js_St.js"></script>
+
+	<script  src="./js/crossbrowser-script.js"></script>
+
+	<script src="./js/main.js"></script>
+
+</body>
+</html>
