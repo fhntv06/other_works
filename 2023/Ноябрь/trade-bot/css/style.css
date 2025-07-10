@@ -1,0 +1,20 @@
+.panel {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 250px;
+  width: 300px;
+}
+
+.managemen, .max, .summary, .maxSummary, .historicalMax {
+  display: block;
+  margin: 10px;
+  height: 20px;
+  color: #000;
+}
+
+.managemen span {
+  padding: 5px;
+}

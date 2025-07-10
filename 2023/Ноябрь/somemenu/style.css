@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(8, 6, 14);
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.column-2 {
+    grid-column: span 2; 
+}
+
+
+.content-center {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    padding: 0 14px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 48px;
+    grid-column: span 12;
+    width: 100%;
+    height: 56px;
+    background-color: #ecececcc;
+}
+
+
+.header__left { 
+    height: inherit;
+}
+
+.header__right { 
+    grid-column-start: -2;
+}
+
+.header__menu { 
+    gap: 0 24px; 
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: span 6; 
+}
+
+.header__menu__item { 
+    grid-column: span 1; 
+    height: max-content;
+}
+
+.header__menu__link { 
+   height: max-content;
+   position: relative;
+}
+
+.header__menu__item.opened, .header__products.opened {
+    height: inherit;
+ }
+
+.header__menu__item.opened .header__menu__link, .header__products.opened span {
+    color: red;
+ }
+
+.header__menu__item.opened .header__menu__link::before,
+.header__products.opened::before,
+.header__menu__item.opened .header__menu__link::after,
+.header__products.opened::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 20px;
+ }
+
+.header__menu__item.opened .header__menu__link::before, 
+.header__products.opened::before {
+    left: -25px;
+    right: 100%;
+ }
+
+.header__menu__item.opened .header__menu__link::after,
+.header__products.opened::after {
+    right: -25px;
+    left: 100%;
+ }
+
+.header__press {
+    grid-column: 5/ span 2;
+}
+
+.header__auth {
+    margin-right: 40px;
+    position: relative;
+    height: 100%;
+}
+
+.header__auth::before {
+    content: '';
+    position: absolute;
+    right: -24px;
+    background: #171212;
+    width: 1px;
+    height: inherit;
+}
+
+.nav-wrap {
+    position: relative;
+    margin-left: 1px;
+}
+
+.nav-wrap-open {
+    transition: opacity .3s ease-in-out;
+}
+
+.nav-wrap-close {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+nav.opened .nav-wrap-open {
+    opacity: 0;
+}
+
+nav.opened .nav-wrap-close {
+    opacity: 1;
+}
+
+.submenu {
+    opacity: 0;
+    transition:  opacity .18s linear;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 56px;
+    pointer-events: none;
+}
+
+.submenu__column {
+    display: flex;
+    flex-direction: column;
+}
+
+ .submenu:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.submenu:after {
+    transform: scaleY(0);
+    height: 100%;
+    transform-origin: 0 0;
+    transition: transform .2s ease-in;
+    background: #d9d7e4;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 2px 0px rgba(34, 60, 80, 0.2);
+    z-index: -1;
+}
+
+.header__menu__item.opened, [data-burger].opened, .header__products.opened {
+    height: 100%;
+}
+
+.header__menu__item.opened .submenu, [data-burger].opened .submenu, .header__products.opened .submenu {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.header__menu__item.opened .submenu:after,
+[data-burger].opened .submenu:after,
+.header__products.opened .submenu::after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.header__products-title {
+    position: relative;
+}
+
+.header__products-title span::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width .3s linear;
+}
+
+.header__products.opened .header__products-title span::before {
+    width: 100%;
+}
+
+.header__products.opened .header__products-title {
+    color: red;
+}

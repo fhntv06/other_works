@@ -1,0 +1,33 @@
+{
+  "name": "Tinkoff",
+  "description": "Tinkoff Terminal",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting", "tabs", "notifications"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "images/icon_16x16.png",
+    "32": "images/icon_32x32.png",
+    "48": "images/icon_48x48.png",
+    "128": "images/icon_128x128.png"
+  },
+  "host_permissions": [
+    "https://www.tinkoff.ru/terminal/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.tinkoff.ru/terminal/"
+      ],
+      "js": [
+        "js/terminal.js"
+      ],
+      "css": [
+        "css/style.css"
+      ]
+    }
+  ]
+}
