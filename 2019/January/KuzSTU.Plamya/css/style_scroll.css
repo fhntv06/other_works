@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Carter+One);
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']#section-scroll1:checked ~ nav > label[for='section-scroll1'] {
+  background-color: #f0f403;
+}
+
+input[type='radio']#section-scroll1:checked ~ section-scroll:nth-of-type(1) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+
+input[type='radio']#section-scroll1:checked ~ .cover {
+  background-color: #eb9385;
+}
+
+input[type='radio']#section-scroll2:checked ~ nav > label[for='section-scroll2'] {
+  background-color: #03f40a;
+}
+
+input[type='radio']#section-scroll2:checked ~ section-scroll:nth-of-type(2) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+
+input[type='radio']#section-scroll2:checked ~ .cover {
+  background-color: #99c0bc;
+}
+
+input[type='radio']#section-scroll3:checked ~ nav > label[for='section-scroll3'] {
+  background-color: #0358f4;
+}
+
+input[type='radio']#section-scroll3:checked ~ section-scroll:nth-of-type(3) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+
+input[type='radio']#section-scroll3:checked ~ .cover {
+  background-color: #937782;
+}
+
+input[type='radio']#section-scroll4:checked ~ nav > label[for='section-scroll4'] {
+  background-color: #f40303;
+}
+
+input[type='radio']#section-scroll4:checked ~ section-scroll:nth-of-type(4) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+
+input[type='radio']#section-scroll4:checked ~ .cover {
+  background-color: #2d4249;
+}
+
+.nav_scroll {
+  position: absolute;
+  z-index: 2;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.nav__item {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 12px auto;
+  border: solid 2px white;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.nav__item:hover {
+  background-color: white;
+}
+
+section-scroll {
+    display: block;
+    height: 115%;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transition-delay: 0.5s;
+}
+
+section-scroll:nth-of-type(1) {
+   background-image: url(../img/position1.png);
+}
+
+section-scroll:nth-of-type(2) {
+ background-image: url(../img/position2.png);
+}
+
+section-scroll:nth-of-type(3) {
+ background-image: url(../img/position3.png);
+}
+
+section-scroll:nth-of-type(4) {
+ background-image: url(../img/position4.png);
+}
+
+section-scroll.background {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
