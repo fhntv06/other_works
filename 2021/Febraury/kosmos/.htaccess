@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+DirectoryIndex default.php
+
+RewriteCond %{REQUEST_URI} ^/common/404.*
+RewriteRule ^(.*)$ [R=404]
+ErrorDocument 404  http://kosmos/404.php
+

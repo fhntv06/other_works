@@ -1,0 +1,4 @@
+Нужно сделать чтобы сворачивалась во вкладку
+как вот тут: https://ruseller.com/lessons/les1239/demo/index.html
+
+сайт: https://ruseller.com/lessons.php?id=1239&rub=2

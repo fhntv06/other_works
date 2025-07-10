@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+DirectoryIndex default.php
+
+RewriteCond %{REQUEST_URI} ^/common/404.*
+RewriteRule ^(.*)$ [R=404]
+ErrorDocument 404  http://deathsinfilm/404.php
+

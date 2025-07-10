@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: #141615;
+    max-width: 1200px;
+    max-height: 900px;
+    padding: 80px;
+    overflow: hidden;
+}
+h1{
+    font-size: 65px;
+    color: white;
+    max-width: max-content;
+    line-height: 90px;
+}
+h1, .title-gray, h3{
+    font-family: system-ui;
+
+}
+.modal{
+    display: block;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 800px;
+}
+.container{
+    background-repeat: no-repeat;
+    background-image: url(/file/img/bluCircle-and-pc.png);
+    height: 476px;
+    width: 740px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.container-content{
+    height: 634px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 57px;
+    width: 100%;
+}
+.title-gray{
+    color: #A7A7A7;
+    font-weight: 500;
+}
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-buttons .roll{
+    background-image: url(/file/img/icon_roll.png);
+}
+.header-buttons .expand{
+    background-image: url(/file/img/icon_expand.png);
+
+}
+.header-buttons .close{
+    background-image: url(/file/img/icon_close.png);
+
+}
+.roll, .expand, .close{
+    height: 24px;
+    width: 33px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-position: center center;
+}
+.footer{
+    height: 57px;
+
+}
+.tab{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 170px;
+    background-color: #fff;
+    text-align: center;
+    border-bottom: 5px solid blue;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    transition: .5s;
+}
+.tab:hover{
+    transition: .3s;
+}
+.active__modal{
+    display: none;
+}
+.active__tab{
+    display: block;
+}
+.active__tab-open{
+    border-bottom: 5px solid transparent;
+
+}
+.active__tab-open:hover{
+    border-bottom: 5px solid #9B9FAB;
+    transition: .3s;
+
+}
+.modal_expand{
+    margin: -40px -80px;
+}
+.tab h3{
+    font-weight: bold;
+}
