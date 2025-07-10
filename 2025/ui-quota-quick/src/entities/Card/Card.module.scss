@@ -1,0 +1,13 @@
+.card {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+	column-gap: 48px;
+	padding: 12px;
+	border-radius: 16px;
+	background-color: #263238;
+}
+.cardContent {
+	display: flex;
+	flex-direction: column;
+}

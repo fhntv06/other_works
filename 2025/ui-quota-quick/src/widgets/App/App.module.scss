@@ -1,0 +1,109 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #111618;
+    padding: 12px;
+}
+.header {
+    position: relative;
+    display: flex;
+    padding: 12px;
+    margin-bottom: 32px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    height: 45%;
+}
+.neonButton {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition:
+        background-color .8s ease-out,
+        transform .3s ease-in;
+
+    svg {
+        transition: transform .3s ease-out;
+    }
+    &.active {
+        background-color: #df5e5e;
+        transition: background-color .5s ease-in;
+
+        &:not(.storageButton) {
+            transform: rotate(45deg);
+            transition: transform .3s ease-out;
+        }
+    }
+    &::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #ff00ff, #00ffff);
+    }
+    &:hover::before {
+        transform: scale(1.2);
+    }
+    &:active {
+        transform: scale(.9);
+    }
+    &:disabled {
+        background-color: gray;
+        pointer-events: none;
+    }
+}
+.storageButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.setAddToStorageButton {
+    z-index: 1;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.main {
+    position: relative;
+	height: 100%;
+	padding: 12px;
+	border: 1px solid #fff;
+	border-radius: 16px;
+}
+.wrapperCards {
+    display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+.mainCard {
+    display: flex;
+    column-gap: 12px;
+}
+.headerContent {
+    display: flex;
+    column-gap: 12px;
+    width: calc(100% - 12px - 48px - 12px);
+
+    h4 {
+        margin-bottom: 8px;
+    }
+}
+.input {
+	padding: 12px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
