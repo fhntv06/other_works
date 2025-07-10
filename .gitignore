@@ -1,0 +1,14 @@
+# projects have git
+get-tasks-yandex/
+webgl-course/
+react-animation-portfolio/
+
+# disabled video
+*.mp4
+*.avi
+
+# disabled npm
+node_modules/
+
+# disabled ide
+.vs/
