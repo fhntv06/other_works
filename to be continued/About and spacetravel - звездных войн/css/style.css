@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0px;
+}
+
+body{
+
+    /* maybe */
+    /* background: url(../gif/WDrB.gif);
+    background-repeat: no-repeat;
+    background-position: 100%;  
+    background-size: cover;  */
+
+    /* background: url(../gif/4huS.gif);
+    background-repeat: no-repeat;
+    background-position-y: 23%;
+    background-size: cover; */
+    
+    /* background: url(../gif/4Mhq.gif);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 66%; */
+
+    /* background: url(../gif/4Pzc.gif);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-size: cover; */
+
+    
+    /* background: url(../gif/V4jb.gif);
+    background-repeat: no-repeat;  */
+
+    /* background: url(../gif/V25.gif);
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background: url(../gif/KUnl.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
